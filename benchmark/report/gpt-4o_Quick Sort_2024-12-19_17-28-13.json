@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "gpt-4o",
+  "modelFrom": "api",
+  "timeCost": 79.77,
+  "testCaseOutput": "// 在茫茫数据江湖，有一项任务唤作快意排序，那便是将混乱之列化为有序 //\nfunction quickSort(arr) {\n  // 若江湖众多英豪仅剩一人，可叩问其名，自成一派 //\n  if (arr.length <= 1) return arr;\n  \n  // 初入江湖，需择一位盖世豪杰定为基准，震慑群侠 //\n  const pivot = arr[0];\n  // 左侧高手众位，守卫基准之左，心怀正道 //\n  const left = [];\n  // 右侧奸邪势力，列于基准之右，图谋不轨 //\n  const right = [];\n  \n  // 在江湖行走，观探每位豪杰，按其心性分道而行 //\n  for (let i = 1; i < arr.length; i++) {\n    // 若心向光明，当入左路，助力正道 //\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    // 若心术不正，当列右方，助纣为虐 //\n    } else {\n      right.push(arr[i]);\n    }\n  }\n  \n  // 此招妙趣难解，需反复使用，区分正邪后再齐聚江湖，终成无敌之势 //\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 9,
+  "codeCoverage": 8,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}

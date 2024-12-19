@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 16.41,
+  "testCaseOutput": "// 龙门镖局大弟子张飞，今得江湖重托，以快刀术斩群雄，助正道除魔卫道\n// 门派角色：龙门镖局 - 飞鹰侠 \n// 武功招式：快刀六式 - 初式一刀两断，分清敌我；\n//          中式五方乱舞，搅乱贼心；\n//          终式雷霆万钧，力拔山兮气盖世\nfunction quickSort(arr) {\n  // 若弟子面前之阵无一敌手，即此阵已破，则径直杀出！\n  if (arr.length <= 1) return arr;\n  \n  // 按照掌门之令，选取一刀为分界，左方弟子皆在刀下，右则反之\n  const pivot = arr[0];\n  const left = [];\n  const right = [];\n  \n  for (let i = 1; i < arr.length; i++) {\n    // 非我族类，其心必异。以刀验之。\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n  \n  // 将两支弟子按兵分三路，齐头并进！左方先斩后杀，右则反之；中央为帅，雷霆万钧。\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 7,
+  "readability": 6,
+  "creativity": 8
+}

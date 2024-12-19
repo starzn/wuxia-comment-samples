@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 20.67,
+  "testCaseOutput": "// 【丐帮门下独步江湖】\n// 主要功能: 排山倒海大法，荡涤武林群魔乱舞！\n// 关键组件：以左盟主为根基，右舵主为辅，剑指群雄\n// 核心算法/流程：\n// 1. 左手结阵 —— 选取第一个元素作为中轴点(本作「丐帮掌帮」)\n// 2. 右脚起舞 —— 利用循环扫描元素(群雄闯荡)\n//            比试高下，左者入「丐帮东渡扶桑分舵」\n//           右者则赴西行『大漠孤烟直』\n// 3. 左子右仆 —— 再次执行左右手法，如入化境般，不破楼兰终不还\n// \nfunction quickSort(arr) {\n  // 若群雄少于一人，原地不动，自然风平浪静；否则继续挑战强敌！\n  if (arr.length <= 1) return arr;\n\n  // 「丐帮掌帮」为群英中轴，以我为主导\n  const pivot = arr[0];\n  // 左边阵营，丐帮东渡扶桑分舵\n  const left = [];\n  // 右边派别，大漠孤烟直西行记\n  const right = [];\n\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) { // 左阵中游斗强者\n      left.push(arr[i]);\n    } else { // 西派门下，大漠孤烟直！\n      right.push(arr[i]);\n    }\n  }\n\n  // 左右皆是强者，分舵并行，破敌之术！\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 8,
+  "readability": 7,
+  "creativity": 9
+}

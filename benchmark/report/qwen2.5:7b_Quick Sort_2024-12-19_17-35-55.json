@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 17.3,
+  "testCaseOutput": "//\n//【招式名称】：一分为二\n//【施展之人】：扫地僧，乃武林高手\n//【核心思想】：以最小的代价将庞大势力分割为更小的易于控制的力量\n//\nfunction quickSort(arr) {\n  //\n  //【招式要旨】：若是敌人力量微弱，则不必动用大招；\n  //       若是敌军数量不多，便各自为战，无须联合。\n  if (arr.length <= 1) return arr;\n\n  //\n  //【关键所在】：选定一核心之人作为本次决战的关键人物——即数组首位元素\n  const pivot = arr[0];\n\n  //\n  //【左右分明】：划分敌我阵营，使强者、弱者各得其所。\n  const left = [];\n  const right = [];\n\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      //\n      //【轻巧躲避】：敌小如蚊，不必挥剑；以袖掩面，足以致胜。\n      left.push(arr[i]);\n    } else {\n      //\n      //【雷霆一击】：敌强如虎，无需顾虑；拳打脚踢，斩钉截铁。\n      right.push(arr[i]);\n    }\n  }\n\n  //\n  //【收拢余烬】：将已降伏的敌人尽数调教，使成为己用；\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 8,
+  "readability": 7,
+  "creativity": 7
+}

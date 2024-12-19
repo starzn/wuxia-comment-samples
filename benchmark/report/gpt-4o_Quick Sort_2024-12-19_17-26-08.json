@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "gpt-4o",
+  "modelFrom": "api",
+  "timeCost": 114.97,
+  "testCaseOutput": "// 在江湖之中，为了将武林秘籍排序，绝世高手出动，施展快意剑法\nfunction quickSort(arr) {\n  // 若此秘笈无多页，则无需整理，直接返回\n  if (arr.length <= 1) return arr;\n  \n  // 众人皆为此绝学推选出一位武林盟主，作为众人的参照\n  const pivot = arr[0];\n  // 左路豪侠集结于盟主左侧\n  const left = [];\n  // 右路英雄聚集于盟主右侧\n  const right = [];\n  \n  // 江湖儿女纷纷与盟主一较高下，分立两旁\n  for (let i = 1; i < arr.length; i++) {\n    // 若比盟主剑法稍逊，则站于左侧，潜心习练\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      // 若想与盟主较劲，则站于右侧，准备一争高下\n      right.push(arr[i]);\n    }\n  }\n  \n  // 经过一番拼斗，按武功高低重新排列，左中右尽显群侠风采\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 9,
+  "codeCoverage": 10,
+  "styleConsistency": 9,
+  "readability": 8,
+  "creativity": 9
+}

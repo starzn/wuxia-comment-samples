@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 19.47,
+  "testCaseOutput": "// 且说此间乃少林派中人所创武功招式，名曰‘快速排序’。练此功法者需精通门内武学精髓\n// 主要功能：令乱序之江湖人物排列有序。\n// 关键组件：\n//     - ‘quickSort’为练功秘籍，能引你进入功法阵法之中。\n//     - 'arr'乃参悟之物，即需排序之人名阵列。\n// 核心算法/流程：此招式分左右两厢，左方为弱者居位，右方为强者归位。再将江湖新秀以\n//           阵法重新排序，使其合众成一统武林。\n// 潜在难点：\n//     - ‘pivot’乃阵法核心，须有深邃武学造诣者方可稳操胜券。如误选则必遭险境。\n\nfunction quickSort(arr) {\n  if (arr.length <= 1) return arr;\n  // 阵眼一：选取首领，以作分庭抗礼之用\n  const pivot = arr[0];\n  // 创左右两厢之地基，将强者置右方，弱者则居左。\n  const left = [];\n  const right = [];\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {   // 左侧阵营强者不敌，则令其迁至左侧\n      left.push(arr[i]);\n    } else {   // 强者自然归于右侧，乃天经地义\n      right.push(arr[i]);\n    }\n  }\n  // 将左右两厢重新排序，并将首领放回原处。\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}

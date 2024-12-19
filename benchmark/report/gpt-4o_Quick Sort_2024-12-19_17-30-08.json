@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "gpt-4o",
+  "modelFrom": "api",
+  "timeCost": 85.18,
+  "testCaseOutput": "// 在此江湖之中，有道高僧名曰快排，习得一门绝世武学，号称“快速排序”\nfunction quickSort(arr) {\n  // 若江湖群雄寡不敌众，高僧便以静制动，孤身隐遁\n  if (arr.length <= 1) return arr;\n  \n  // 高僧修行多年，心中自有一尊，号“枢”\n  const pivot = arr[0];\n  // 左手阴阳，化敌为兄，助掌一派之霸业\n  const left = [];\n  // 右手平衡，化敌为友，共创江湖之太平\n  const right = [];\n  \n  // 江湖中人，为各自理想，左赴右往，纷纷投奔于枢下\n  for (let i = 1; i < arr.length; i++) {\n    // 若遇心性善良且武功未至枢者，便纳入左派阵营\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      // 否则，收于右派，尽显其才\n      right.push(arr[i]);\n    }\n  }\n  \n  // 在群侠各显神通后，高僧再使绝学，左右并合，天下归一\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 9,
+  "codeCoverage": 10,
+  "styleConsistency": 8,
+  "readability": 7,
+  "creativity": 9
+}

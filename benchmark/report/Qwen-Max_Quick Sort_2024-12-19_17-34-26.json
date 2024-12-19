@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 16.4,
+  "testCaseOutput": "function quickSort(arr) {\n  // 江湖上无人不晓，此乃快排神功之起手势，倘若手中仅存一物，即无须运功，直接返回。\n  if (arr.length <= 1) return arr;\n  // 江湖传说以一招『选主』定天下之势，首招即点名群雄中之首，此位即为『枢纽』。\n  const pivot = arr[0];\n  // 古有云，左有『左护法』者，轻如鸿毛般，皆是不及『主将』之轻身功夫者。\n  const left = [];\n  // 而右者，称『右护法』，尽皆为身怀绝技，能与『主将』匹敌，又或更强者汇聚。\n  const right = [];\n  // 自江湖大会启幕，群雄一一登场较量，但凡技艺逊于『主将』者，皆入『左护法』营，而余者则归『右护法学』。\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n  // 待江湖大会落幕，武林中人皆以其所属阵营之力排列，重现江湖之序矣。\n  return [...quickSort(left), pivot, ...quickShift(right)];\n}\n",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.0230384,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 8,
+  "readability": 6,
+  "creativity": 7
+}

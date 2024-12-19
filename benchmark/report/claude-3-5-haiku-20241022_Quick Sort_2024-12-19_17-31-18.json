@@ -1,0 +1,9 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": true,
+  "modelName": "claude-3-5-haiku-20241022",
+  "modelFrom": "api",
+  "timeCost": 9.97,
+  "inputTokensCost": 0.006643,
+  "outputTokensCost": 0.01232
+}

@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "gpt-4o",
+  "modelFrom": "api",
+  "timeCost": 7.08,
+  "testCaseOutput": "// 少年久闻天下无影魔术，心怀炽热，他踏上了排序之路\nfunction quickSort(arr) {\n  // 如若敌方人单势弱，他便安然返还，不做纠缠\n  if (arr.length <= 1) return arr;\n  \n  // 取定当头之役，自傲江湖胜败之间者，名曰中流砥柱\n  const pivot = arr[0];\n  const left = [];\n  const right = [];\n  \n  // 初入比武，两军剑气碰撞，各显绝艺，于实招中过招\n  // 若招势小者则畏言必遂遵右，落座命途分路走在左路\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n  \n  // 少年召集内外群英，继而以通洞微光技法趋入正题，再临大理王朝\n  // 快排计定，一众豪杰再次与无影齐斗法阵\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0.00660625,
+  "outputTokensCost": 0.01085,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 8,
+  "readability": 7,
+  "creativity": 9
+}

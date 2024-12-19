@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 27.33,
+  "testCaseOutput": "function quickSort(arr) {\n  // 江南派掌门独孤大侠接下了一个艰巨的任务，若非敌众我寡，便是无需出手，即视为完成。\n  if (arr.length <= 1) return arr;\n\n  // 在这场武林大会之中，独孤大侠决定使用其成名多年的绝学——乾坤移位诀，来定天下英豪的位置。\n  const pivot = arr[0];\n  // 乾坤左侧聚集了众多身怀绝技却未尝敌手的年轻人，他们都渴望得到江湖的认可。\n  const left = [];\n  // 右侧则是汇聚江湖老手的地方，他们经验丰富，实力雄厚，只待一战成名。\n  const right = [];\n\n  // 江湖儿女们各展所长，独孤大侠则是在众人中挑选着合适的对手，让每一位好汉都有机会展示自己的实力。\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      // 功力尚浅的弟子，加入左派，以求磨炼。\n      left.push(arr[i]);\n    } else {\n      // 武艺高强者则被分配到了右宗，以待更高层次的挑战。\n      right.push(arr[i]);\n    }\n  }\n\n  // 经过一番精心排列，最终江湖格局已定，天下归心，独孤大侠也完成了自己的英雄使命。\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.023431100000000003,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}

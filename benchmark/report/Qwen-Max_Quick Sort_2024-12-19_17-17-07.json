@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 31.35,
+  "testCaseOutput": "// 快剑斩乱麻：武林中有一招，名曰'斩麻'，用于整理散乱无比之剑谱。此招威力在于化繁为简，以一招之力，清乱如风。\n// 此乃江湖传说之快剑门绝学之起手势。\nfunction quickSort(arr) {\n  // 观望敌阵：若只是一人或根本无踪迹可循之地，则静待其变，不宜出手。\n  if (arr.length <= 1) return arr;\n\n  // 选定主位者：自古英雄必居中，于队伍中择一名武艺卓越之弟子作为首领，以其为标杆。\n  const pivot = arr[0];\n  // 左右互搏之阵型：左面列阵为较弱轻骑军（left），右方布下强力猛士（right），以迎敌。\n  const left = [];\n  const right = [];\n\n  // 渡劫试炼：各队伍依次上阵，若武功逊色于首领者入轻骑队列，其余尽入猛士阵容待命。\n  for (let i = 1; i < arr.length; i++) {\n    // 比高下，判归属：弱者左归，强者右行。\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n  // 分兵布阵已罢，各自为阵。令轻骑与猛士各依其队再行演练（即各自施展出同样的一套斩麻招数），最后将轻骑、首领以及所有强人合并一路，形成无敌阵容。\n  // 吾辈练至此时已可出剑江湖，笑傲群敌也。\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.028339850000000003,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 10,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 9
+}

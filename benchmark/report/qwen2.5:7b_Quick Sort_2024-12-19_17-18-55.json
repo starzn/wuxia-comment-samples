@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 17.22,
+  "testCaseOutput": "// 此处乃是江湖上声名赫赫之极地，一曲惊雷破天，乃是我独孤派传世武功绝学——快意恩仇令。\n// 快排之道，在于将大江之水分为清流与浊浪两部分，其中关键所在乃是我等独门秘籍‘选锋诀’也！\nfunction quickSort(arr) {\n  // 天外飞仙，一苇渡江，但凡我独孤派弟子之武功绝技，皆可化繁为简，于乱世中保身立命。\n  if (arr.length <= 1) return arr;\n\n  // 落魄游侠，在江湖各处寻找志同道合之士结伴同行，共同探索武林秘籍。此次选锋诀乃是独门之技，众人无不侧目。\n  const pivot = arr[0];\n  const left = [];\n  const right = [];\n\n  // 江湖之中有无数武林高手，或武功盖世，或手段阴毒，非有一双锐利眼睛难以辨识。选锋诀便是其中一道不显山露水之奇门。\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n\n  // 天下之大，尽收吾辈武林侠士眼中，其中之诡谲变幻又岂止此一端？\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 7,
+  "codeCoverage": 9,
+  "styleConsistency": 8,
+  "readability": 7,
+  "creativity": 8
+}

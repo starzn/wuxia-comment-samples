@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 22.55,
+  "testCaseOutput": "// 江湖中传来了一道绝命密令，需找到乱石阵中失落已久的秘籍《排序真解》，以恢复江湖秩序。\n// 汏清门门人为此踏上了一条艰难的寻宝之路。门中传艺之秘即分而治之，方能克敌制胜。\n\nfunction quickSort(arr) {\n  // 若藏书只有一本，或者空无一册，自然无需要整理，直接返回便是。\n  if (arr.length <= 1) return arr;\n  \n  // 拣选一位武林英豪为旗号，将此批秘籍以其为核心分两边堆放。\n  const pivot = arr[0];\n  const left = [];\n  const right = [];\n  \n  // 余下的书籍，依据轻巧与否，比旗号较轻的放于左边，反之则放右侧以成二营。\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n      // 巧劲秘本皆聚此。\n    } else {\n      right.push(arr[i]);\n      // 沉重绝学归一旁。\n    }\n  }\n\n  // 最后，各自将左右堆中书籍重复此法整顺，并以旗号置于中间，完成此次使命。\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}\n",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.0226457,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 8,
+  "readability": 8,
+  "creativity": 9
+}

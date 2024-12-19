@@ -5,15 +5,19 @@
   "type": "module",
   "author": "KaSong",
   "scripts": {
-    "wuxia": "node src/index.js"
+    "wuxia": "node src/index.js",
+    "benchmark": "node benchmark/index.js",
+    "analyze": "node benchmark/analyze.js"
   },
   "keywords": [],
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@langchain/ollama": "^0.1.3",
-    "langchain": "^0.3.7",
     "@langchain/core": "^0.3.23",
+    "@langchain/ollama": "^0.1.3",
+    "@langchain/openai": "^0.3.14",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.3.7",
     "zod": "^3.24.1"
   }
 }

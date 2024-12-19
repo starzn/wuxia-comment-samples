@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 21.3,
+  "testCaseOutput": "// 心有灵犀，一脉相承；速归一门独创秘籍，名曰快归心诀\nfunction quickSort(arr) {\n  // 遗世而独立于外者，乃归一也，故无需施展归一之能事\n  if (arr.length <= 1) return arr;\n  \n  // 任风云涌动，万物有基者定之为首——立此为首，万物方得序；为首者，则首屈一指之高手是也\n  const pivot = arr[0];\n  const left = [];\n  const right = [];\n  \n  // 江湖多风浪，唯有真英雄可以辨真伪、论先后；强者居右，若不比其锋利，则应左立以待\n  for (let i = 1; i < arr.length; i++) {\n    // 观敌辨强弱，较轻者置于吾左边，为同袍之护盾，较重者置于右，乃待强者归来之时\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n  \n  // 虚怀以待，左侧之兵先行，首领紧随，右侧强将尾随；此队列，非江湖第一豪杰队伍而何？\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.022122100000000002,
+  "wuxiaKeywords": 9,
+  "codeCoverage": 10,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}

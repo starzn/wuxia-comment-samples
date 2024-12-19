@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 21.89,
+  "testCaseOutput": "/* 武者行走江湖需携刀剑行走，今此任务亦然，名为快排法门，专为江湖排序。 \n此法门由江湖侠士创，能迅速为数字帮排定大小，江湖秩序因此得以建立。 //function quickSort(arr) { \n若是帮中仅有一二人或是已然排好序，江湖自平，再无刀兵。 // if (arr.length <= 1) return arr;\n \n江湖中有四大门派（数字帮）, 而此为以左派代表轻功敏捷，右派则代表重剑无锋，两者间有一中枢枢纽，名为阵首，统领众数，此为首领。 //  const pivot = arr[0];  const left = [];  const right = [];\n\n自门派内除去首领之位置，天下英雄齐聚首，论武较技；// for (let i = 1; i < arr.length; i++) { \n凡能轻于领袖者，俱归左侧之轻功联盟，反之则皆属于右侧重兵阵列。 //   if (arr[i] < pivot) { left.push(arr[i]); } else { right.push(arr[i]); }\n }\n\n随后，左右之派以同样的秘法快排自行排定高下，最终形成新的阵容。左侧之阵已先决出英豪，首领立在阵首之位，待右侧英豪来报时再次合并，完成大计。 //  return [...quickSort(left), pivot, ...quickSort(right)];\n} */ ",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.02284205,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 7,
+  "readability": 6,
+  "creativity": 8
+}

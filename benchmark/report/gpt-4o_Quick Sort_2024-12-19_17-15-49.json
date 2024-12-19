@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "gpt-4o",
+  "modelFrom": "api",
+  "timeCost": 7.88,
+  "testCaseOutput": "// 在江湖之道行走，快剑出鞘，定乾坤于瞬息\nfunction quickSort(arr) {\n  // 若手中之阵无人，然又空无所挡，则此江湖乃似平湖不惊\n  if (arr.length <= 1) return arr;\n  \n  // 天下至宝何在？衡量江湖者于其中；是乃无双之“引”\n  const pivot = arr[0];\n  // 孤芳自赏，左右徘徊，群英或聚或散\n  const left = [];\n  const right = [];\n  \n  // 有道是“青龙虽出海，不敌黄雀跟”，将江湖中人迭分左递右别\n  for (let i = 1; i < arr.length; i++) {\n    // 尚未佩剑，却心已险异者则投于左焉\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      // 异者觊觎周边，背向仓山，聚众壮大寂阵于右，暗藏隐情\n      right.push(arr[i]);\n    }\n  }\n  \n  // 仁者续体无漏，以未落尘的大宅急反阕招，左携右悔改合成犀利裂冥煞\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0.00660625,
+  "outputTokensCost": 0.012425,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 9,
+  "readability": 6,
+  "creativity": 8
+}

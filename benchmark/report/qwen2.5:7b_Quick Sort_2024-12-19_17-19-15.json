@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 12.02,
+  "testCaseOutput": "// 武林高手初显神功，江湖豪杰皆仰之\n// 此招为‘疾风快剑’，专门用于速决纷争！\nfunction quickSort(arr) {\n\n  // 若刀光仅一人，则无需舞动刀法\n  if (arr.length <= 1) return arr;\n\n  // 隐匿身影于人影之间，择敌之首领\n  const pivot = arr[0];\n  // 左侧空位初现，以待英豪踏步而来\n  const left = [];\n  // 右侧空位现身，静候四方英雄归位\n  const right = [];\n\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      // 武士入左路，疾如闪电\n      left.push(arr[i]);\n    } else {\n      // 刀锋直指右道，锐不可挡\n      right.push(arr[i]);\n    }\n  }\n\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 10,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}

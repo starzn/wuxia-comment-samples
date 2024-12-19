@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "gpt-4o",
+  "modelFrom": "api",
+  "timeCost": 14.3,
+  "testCaseOutput": "// 在这无边江湖之中，欲找那安宁之地者，唯寻快速排序之术。\nfunction quickSort(arr) {\n  // 若非敌人众多，仅有寡敌，则不需操戈，也就无动兵刃之需。\n  if (arr.length <= 1) return arr;\n  \n  // 定位豪杰，于是取阵中第一勇者为主，将其他人分门别类；如以英豪侠字处事也。\n  const pivot = arr[0];\n  // 相帮伴也，以力量碾转之招；倘佯是势下，只合于较弱面间扶以亲识乎：\n  const left = [];\n  // 世人视拯，以靠健极之法，如兵丁决疆；暴善教者难知于雄之从进，即入高坛；知崖咫尺，小浪翼邪谋朝户斗足用者出愚雁难入刀相便赤之责涉演理状。\n  const right = [];\n  \n  // 镇东动不成江水风云人惑尽快消息见得量令。\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      // 以境土以闻安健于面色往际青遂触克疆域坌秉矜剑，此位代神长不得权生，共所编司北屋湖瞤嘉入省面叫头天这常右以鹰成热敦示正为峰组道折倍看版之丹声扰面。\n      left.push(arr[i]);\n    } else {\n      // 换说敌手妙箭直北、复东镇则羧步上雅、态将转怀禨心快瀹鼓番边除侧措贵虎低宏理花。\n      right.push(arr[i]);\n    }\n  }\n  \n  // 横暴以昰按按活段猎其刀霸山光顾身满事夏帝及便的里安熏柳理恵累淳鸿垂干虎孬巴古起欤徙胜哈谢金说位主号世朱也待能望镜秦王速僄楚萧夺桖克结之引聚尔难。\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0.00660625,
+  "outputTokensCost": 0.01988,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 5,
+  "readability": 3,
+  "creativity": 7
+}

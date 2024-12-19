@@ -1,13 +1,8 @@
 import fs from "fs/promises";
 
 // 主函数：使用链式调用
-async function generateWuxiaCodeComments(code, runnable) {
-  try {
-    return await runnable.invoke({ code });
-  } catch (error) {
-    console.error("生成注释出错：", error);
-    throw error;
-  }
+function generateWuxiaCodeComments(code, runnable) {
+  return runnable.invoke({ code });
 }
 
 export async function processCodeFile(filePath, runnable) {
@@ -25,11 +20,27 @@ export async function processCodeFile(filePath, runnable) {
 
     const endTime = performance.now();
     const timeElapsed = ((endTime - startTime) / 1000).toFixed(2); // 转换为秒，保留两位小数
-
     console.log(`生成注释成功：${filePath} (用时: ${timeElapsed}秒)`);
   } catch (error) {
     console.error(`生成注释出错：${filePath}:`, error);
     throw error;
+  }
+}
+
+export async function processCodeExec(code, runnable) {
+  const startTime = performance.now();
+  const result = {};
+  try {
+    // 生成武侠风格注释
+    result.annotatedCode = await generateWuxiaCodeComments(code, runnable);
+  } catch (error) {
+    console.error(`生成注释出错：`, error);
+    result.wrongStructure = true;
+  } finally {
+    const endTime = performance.now();
+    const timeCost = Number(((endTime - startTime) / 1000).toFixed(2)); // 转换为秒，保留两位小数
+    result.timeCost = timeCost;
+    return result;
   }
 }
 

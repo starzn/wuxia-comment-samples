@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 22.95,
+  "testCaseOutput": "// 踏上了寻找天下第一排序法‘速排剑阵’的秘密之旅\nfunction quickSort(arr) {\n  // 此乃江湖规矩，若无江湖之人，何来江湖之事？\n  if (arr.length <= 1) return arr;\n  \n  // 选中的剑首，乃剑阵之眼，掌控全局\n  const pivot = arr[0];\n  // 侠士们的左方队伍，集天下敏捷轻功于一身\n  const left = [];\n  // 侠士们的右方队伍，集天下重剑厚实之气魄\n  const right = [];\n  \n  // 侠士江湖游历，各显神通之时\n  for (let i = 1; i < arr.length; i++) {\n    // 若尔武功低于剑首，则归往左队共习轻功\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else { // 若非如此，则至右队与重型兵刃共同磨砺\n      right.push(arr[i]);\n    }\n  }\n  \n  // 重现江湖之剑谱，乃先练左边轻功至熟，再持剑立于中点，最后练就右方重剑。\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.020420400000000002,
+  "wuxiaKeywords": 9,
+  "codeCoverage": 9,
+  "styleConsistency": 8,
+  "readability": 7,
+  "creativity": 8
+}

@@ -1,0 +1,9 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": true,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 15.71,
+  "inputTokensCost": 0,
+  "outputTokensCost": 0
+}

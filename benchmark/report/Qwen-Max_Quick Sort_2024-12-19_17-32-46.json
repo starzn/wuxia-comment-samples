@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 25.41,
+  "testCaseOutput": "// 踏破铁骑，江湖路远，快速刀侠法现江湖，一招之下，天下归正，万物有序。\n// 门宗内弟子众多，但若要选出其中最杰出之才，并非易事。\nfunction quickSort(arr) {\n  // 江湖中，有无数的门派与独行侠，当弟子单一时，江湖便无风云变幻，一切归于平静。\n  if (arr.length <= 1) return arr;\n\n  // 以一派之长为首，设立为擂主，江湖群雄将按其武艺高低，分立左右两堂。\n  const pivot = arr[0];\n  const left = [];\n  const right = [];\n\n  // 江湖中流传着无数挑战，各堂弟子依次挑战，以证武艺。\n  for (let i = 1; i < arr.length; i++) {\n    // 若有弟子武学修为尚不及擂主者，便纳入左堂以待来日。\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      // 已达擂主水平者或更强者，则纳入右堂，以图后会。\n      right.push(arr[i]);\n    }\n  }\n  // 武学之争，永无止境。左右两堂弟子在各自堂中，亦有其挑战和历练，以期成为下一段传奇。\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.023431100000000003,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 10,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}

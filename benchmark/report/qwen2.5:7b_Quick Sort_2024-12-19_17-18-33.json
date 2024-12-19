@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 21.34,
+  "testCaseOutput": "// 话说江湖上有一个神秘任务，名为快速排序。\n// 非凡剑派掌门李逍遥便是这次任务的主角。他的武功秘籍是分而治之法，\n// 只要掌握精髓，就能瞬间搞定乱糟糟的武侠界大事。\n\nfunction quickSort(arr) {\n  // 话说若无武林至宝（即数组元素小于等于一），李逍遥便可以安然归去\n  if (arr.length <= 1) return arr;\n  \n  // 取门派长老，名为枢轴点。这位长老之剑锋利无比，能轻易切割一切。\n  const pivot = arr[0];\n  // 切割出左派兄弟（即比枢轴小的弟子），右派兄弟同理。\n  const left = [];\n  const right = [];\n  \n  // 开启大阵，寻找所有符合条件的小弟。武林人士莫要怕，这里是比武招亲之地，\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n  \n  // 结束大阵，开启分枝。左派兄弟先走，随后是剑主李逍遥的豪迈之躯，\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 9,
+  "readability": 8,
+  "creativity": 9
+}

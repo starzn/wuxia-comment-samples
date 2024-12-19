@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 20.38,
+  "testCaseOutput": "// 某日，武林之中流传一绝技——速剑排云掌，据说练成者无人能敌\nfunction quickSort(arr) {\n  // 拜入门派之人需接受入门考验, 若人数稀少，则视为已通考验\n  if (arr.length <= 1) return arr;\n  \n  // 长老指派新入门弟子为试剑靶子\n  const pivot = arr[0];\n  // 为了考察武艺纯熟程度, 设两大弟子分别站左右两边\n  const left = [];\n  const right = [];\n  \n  // 驰骋江湖路漫漫, 择良才而试, 是真英雄方能识英雄\n  for (let i = 1; i < arr.length; i++) {\n    // 功力尚未深厚，仍需在左侧行走学习\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {     \n      // 那些功夫已得真传的侠士, 应立于长老之前接受更高层次指导\n      right.push(arr[i]);\n    }\n  }\n  // 速剑排云终成，只见身影交错，快如闪电\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.02022405,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 10,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}

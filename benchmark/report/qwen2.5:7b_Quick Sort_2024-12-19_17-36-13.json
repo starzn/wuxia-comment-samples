@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 14.14,
+  "testCaseOutput": "// 此段秘籍乃降龙十八掌之奥义，可于瞬息之间扫尽敌手。\n// 主要功能：使输入数组化繁为简，如流水落花般排序。\n\nfunction quickSort(arr) {\n  // 刀锋划破长空，斩断万千迷雾。此乃快速排序的核心所在，需练至登峰造极方能掌握。\n  if (arr.length <= 1) return arr;\n\n  // 引一柱银针为中轴点，左指右，右指左，左右分明。如是则得定睛之术。\n  const pivot = arr[0];\n  const left = [];\n  const right = [];\n\n  // 将敌人一一引入圈套之中，待时机成熟，一刀毙命。此乃快速排序分而治之的关键所在。\n  for (let i = 1; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n\n  // 最终一战，万军之中取上将首级。将排序完成的左右两部分数组合并，使之重归一处。\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 9,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}

@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "qwen2.5:7b",
+  "modelFrom": "local",
+  "timeCost": 20.84,
+  "testCaseOutput": "// 【起始江湖】\n//\n// 天下英雄谁人识？今朝论剑排天下！\n// 主功便是『快速排序』大阵，乃是以『枢轴』一划为界的精妙功夫！\n\nfunction quickSort(arr) {\n  // 按江湖规矩行事：数组长度若仅有一物，则不必再动。\n  if (arr.length <= 1) return arr;\n\n  // 找得阵法中的『枢轴』，即为数组第一之『元素』！\n  const pivot = arr[0];\n  // 定下两道江湖门派：『左边门派』与『右边门派』！\n  const left = [];\n  const right = [];\n\n  // 循环遍历『大阵』之中之『元素』，乃是要分清左右门派！\n  for (let i = 1; i < arr.length; i++) {\n    // 若是元素值小于枢轴，则归于『左边门派』中。\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else { // 不满足上式条件者，自然便该归入『右边门派』。\n      right.push(arr[i]);\n    }\n  }\n\n  // 组合两大阵法之中之元素：以左阵为首，中以『枢轴』为中坚，再右以右派殿后！\n  return [...quickSort(left), pivot, ...quickSort(right)];\n}",
+  "inputTokensCost": 0,
+  "outputTokensCost": 0,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 10,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}

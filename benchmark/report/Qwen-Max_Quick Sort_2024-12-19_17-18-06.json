@@ -1,0 +1,15 @@
+{
+  "testCaseName": "Quick Sort",
+  "wrongStructure": false,
+  "modelName": "Qwen-Max",
+  "modelFrom": "api",
+  "timeCost": 29.14,
+  "testCaseOutput": "function quickSort(arr) { // 江湖风云起，英豪聚首共商大计，以剑会友\n  if (arr.length <= 1) return arr;  // 孤侠独闯四方，自成江湖，无需比武定高低\n\n  const pivot = arr[0];  // 立招旗门，选中一勇者挑战四海\n  const left = [];  // 左侧盟友汇聚，共图对抗\n  const right = [];  // 右边敌手云集，誓要一决高下\n\n  for (let i = 1; i < arr.length; i++) {  // 侠客们依次登场显身手\n    if (arr[i] < pivot) {  // 若来者技不如主，左翼相迎以为援手\n      left.push(arr[i]);  // 强敌虽众，团结之力足以御敌\n    } else {  // 否则，便是右路劲敌，需用真功夫应对\n      right.push(arr[i]);  // 真英雄何惧挑战，以剑试敌\n    }\n  }\n\n  return [...quickSort(left), pivot, ...quickSort(right)];  // 汇合诸路英豪所携之胜场，并以盟主立于天地之间\n}",
+  "inputTokensCost": 0.016166919999999998,
+  "outputTokensCost": 0.019765900000000003,
+  "wuxiaKeywords": 8,
+  "codeCoverage": 8,
+  "styleConsistency": 9,
+  "readability": 7,
+  "creativity": 8
+}
