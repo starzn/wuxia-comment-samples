@@ -1,6 +1,6 @@
 # 武侠风注释生成器
 
-根据代码逻辑为代码生成武侠风格的注释，用于[前端 + AI 转型探索营](https://kyscj.xetlk.com/s/3pm8Df)教学目的
+根据代码逻辑为代码生成武侠风格的注释
 
 模型：默认使用`Ollama`跑本地的`qwen2.5:7b`模型，请提前[安装](https://ollama.com/library/qwen2.5)
 
@@ -49,16 +49,16 @@ npm run wuxia 3 examples/quick_sort3.js
 
 ## 目录结构
 
-wuxia-comment/
-├── src/ # 源代码目录
-│ ├── index.js # 入口文件，处理命令行参数并调用相应的 chain
-│ ├── processCodeFile.js # 文件处理相关函数
-│ ├── chain.js # 定义了三条 chain
-│ └── prompt.js # 存放所有提示词模板
-├── examples/ # 示例代码目录
-│ ├── quick_sort1.js # 示例 1（为 chain1 准备）
-│ ├── quick_sort2.js # 示例 2（为 chain2 准备）
-│ └── quick_sort3.js # 示例 3（为 chain3 准备）
+- wuxia-comment/
+  - src/：源代码目录
+    - index.js：入口文件，处理命令行参数并调用相应的 chain
+    - processCodeFile.js：文件处理相关函数
+    - chain.js：定义了三条 chain
+    - prompt.js：存放所有提示词模板
+  - examples/：示例代码目录
+    - quick_sort1.js：示例 1（为 chain1 准备）
+    - quick_sort2.js：示例 2（为 chain2 准备）
+    - quick_sort3.js：示例 3（为 chain3 准备）
 
 ### 不同 Chain 的说明
 
