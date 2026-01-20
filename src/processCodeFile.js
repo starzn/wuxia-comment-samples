@@ -35,6 +35,12 @@ export async function processCodeFile(filePath, runnable) {
 
 export function cli() {
   // 获取实际的命令行参数，跳过 node 和 npm run 相关的参数
+  // [
+  //   '/Users/venus/.nvm/versions/node/v20.18.0/bin/node',
+  //   '/Users/venus/Desktop/AI_samples/wuxia-comment/src/index.js',
+  //   '1',
+  //   'examples/quick_sort1.js'
+  // ]
   const args = process.argv.slice(2);
   const whichChain = args[0];
   const filePath = args[1];
