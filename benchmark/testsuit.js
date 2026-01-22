@@ -15,7 +15,7 @@ export const testModels = [
   //   outputCost: 105,
   // },
   {
-    name: "claude-3-5-haiku-20241022",
+    name: "claude-sonnet-4-5-20250929",
     from: "api",
     inputCost: 7,
     outputCost: 35,

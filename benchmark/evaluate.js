@@ -1,11 +1,12 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { StructuredOutputParser } from "langchain/output_parsers";
+import { StructuredOutputParser } from "@langchain/core/output_parsers";
 import { PromptTemplate } from "@langchain/core/prompts";
 import { config } from "dotenv";
+import { resolve } from "path";
 import { z } from "zod";
 
 // 加载 .env.local 文件到环境变量
-config({ path: ".env.local" });
+config({ path: resolve(process.cwd(), '.env.local') });
 
 // 定义评分结构
 const parser = StructuredOutputParser.fromZodSchema(

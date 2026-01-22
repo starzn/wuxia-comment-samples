@@ -7,7 +7,7 @@ import {
   prompt3_4_commentGenerator,
 } from "./prompt.js";
 import { z } from "zod";
-import { StructuredOutputParser } from "langchain/output_parsers";
+import { StructuredOutputParser } from "@langchain/core/output_parsers";
 import { RunnableSequence } from "@langchain/core/runnables";
 
 // 创建输出解析器

@@ -3,6 +3,10 @@ import { runBenchmark } from "./benchmark.js";
 import { promises as fs } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { config } from "dotenv";
+import { resolve } from "path";
+
+config({ path: resolve(process.cwd(), ".env.local") });
 
 // 以一定间隔时间执行多轮 benchmark
 async function runBenchmarkWithInterval(iterations, intervalMs = 1000) {
@@ -42,4 +46,4 @@ async function reportOutput(data) {
 }
 
 // 每个模型运行10次，间隔1秒（token总消耗小于 0.2刀）
-runBenchmarkWithInterval(10, 1000);
+runBenchmarkWithInterval(1, 1000);
